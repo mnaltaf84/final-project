@@ -1,0 +1,52 @@
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #display{
+            /* margin-left: 13px;             */
+            margin-bottom: 6px;
+            height: 50px;
+            width: 80%;
+            font-family: "Bitcount Prop Single", sans-serif;
+            font-size: xx-large;
+            background-color: darkgrey;
+            color: black            
+        }
+        .container{
+            /* background-color: brown; */
+            width: 200px;
+            /* padding-top: 5px; */
+            padding-bottom: 5px;
+            background-image: linear-gradient(90deg, #95d5b2,#52b788), url(Background.jpg);
+            background-blend-mode: exclusion;
+        }
+        .Button-Row1{
+            margin-bottom: 6px;
+            margin-left: 25px;
+            height: 20px;        
+        }
+        .Button-Row2{
+            margin-bottom: 6px;
+            margin-left: 25px;
+            height: 20px;
+            height: 20px;
+        }
+
+        .Button-Row3{
+            margin-bottom: 6px;
+            margin-left: 25px;
+            height: 20px;
+        }
+
+        .Button-Row4{
+            margin-bottom: 6px;
+            margin-left: 25px;
+            height: 20px;
+        }
+
+        .Button-Row5{
+            margin-bottom: 6px;
+            margin-left: 25px;
+            height: 20px;
+        }

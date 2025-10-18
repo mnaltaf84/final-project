@@ -1,0 +1,20 @@
+.nav-ultag{
+    /* display: flex;
+    flex-direction: column; */
+    background-color: purple;
+}
+li{
+    display: flex;
+    text-decoration: none;
+}
+.nav-bar{
+    display: flex;
+    /* color: whitesmoke; */
+    color: whitesmoke;
+    text-decoration: none;
+    gap: 5px;
+    font-size: 25px;
+}
+.nav-bar:hover{
+    color: rgb(124, 14, 226);
+}

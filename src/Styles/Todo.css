@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: o;
+}
+.main-div{
+    text-align: center;
+    padding: 10px;
+    width: 35vw;
+    height: auto;
+    margin: 20px;
+    border-radius: 15px;
+}
+.complete-list{
+    display: grid;
+    grid-template-columns: 1fr .25fr .25fr;
+    width: 300px;
+    margin-top: 10px;
+}
+.complete-list button{
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+header{
+    text-align: center;
+    text-decoration: underline;
+}
+.todo-task{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-task input{
+    width: 20vw;
+    padding: 5px;
+    background-color: wheat;
+}
+.entry-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.check-btn{
+    background-color: yellow;
+    color: black;
+}
+.check-btn:hover{
+    background-color: lightgreen;
+}
+.delete-btn{
+    background-color: tomato;
+    color: whitesmoke;
+}
+.delete-btn:hover{
+    background-color: lightcoral;
+}
+.todo-task button{
+    border-radius: 15px;
+    padding: 5px;
+}
+.todo-task button:hover{
+    background-color: darkgray;
+}
+.checked span{
+    text-decoration: line-through;
+    color: grey;
+}
+.checked .check-btn{
+    background-color: green;
+    color: wheat;
+}
+.list-empty{
+    color: brown;
+    font-weight: 600;
+    text-align: left;
+}
