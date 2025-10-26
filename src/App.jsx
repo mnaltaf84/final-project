@@ -18,7 +18,6 @@ export default function App() {
   return (
     <>
     <Nav />
-    {/* <NavBarResponsive /> */}
     <Routes>
       <Route path="/" element={<Main />} />
       <Route path="/portfolio" element={<Portfolio/>} />

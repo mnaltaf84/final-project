@@ -1,0 +1,165 @@
+
+/* Base styles */
+body {
+  font-family: 'Inter', 'Roboto', sans-serif;
+  background-color: #f8fafc;
+  color: #1f2937;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Container */
+.portfolio-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Section Card */
+.portfolio-section {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Section Header */
+.portfolio-section h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-left: 5px solid #6366f1;
+  padding-left: 0.75rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #1e3a8a;
+}
+
+/* Header (name & title) */
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: #111827;
+}
+
+.header p {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  color: #4b5563;
+}
+
+/* Professional Summary */
+.professional-summary p {
+  font-size: 1rem;
+  color: #374151;
+  line-height: 1.75;
+}
+
+/* Personal Info & Lists */
+.portfolio-section ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+}
+
+.portfolio-section ul li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+
+/* Skills Chips */
+.skills-chip {
+  display: inline-block;
+  background-color: #e0e7ff;
+  color: #3730a3;
+  padding: 0.4rem 0.8rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  margin: 0.25rem;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.skills-chip:hover {
+  background-color: #c7d2fe;
+  transform: translateY(-2px);
+  cursor: default;
+}
+
+/* Projects list */
+.projects ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+}
+
+.projects ul li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+
+/* Button */
+.download-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.download-btn:hover {
+  background: linear-gradient(135deg, #4f46e5, #4338ca);
+  transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #6b7280;
+  margin-top: 2rem;
+}
+
+/* Responsive grids for Work Experience and Education */
+@media (min-width: 768px) {
+  .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  .header h1 {
+    font-size: 3rem;
+  }
+
+  .header p {
+    font-size: 1.1rem;
+  }
+}
