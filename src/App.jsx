@@ -13,16 +13,12 @@ import { Route, Routes } from "react-router-dom"
 import "./styles/Nav.css"
 import "./Styles/Main.css"
 import "./Styles/Skills.css"
-import NavBarResponsive from "./components/NavBarResponsive"
-import "./Styles/NavBarResponsive.css"
-
-
 
 export default function App() {
   return (
     <>
-    {/* <Nav /> */}
-    <NavBarResponsive />
+    <Nav />
+    {/* <NavBarResponsive /> */}
     <Routes>
       <Route path="/" element={<Main />} />
       <Route path="/portfolio" element={<Portfolio/>} />
