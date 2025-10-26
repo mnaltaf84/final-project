@@ -48,8 +48,45 @@ body {
 
 /* Header (name & title) */
 .header {
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 2rem;
+}
+.header-left {
+  flex: 1 1 68%;
+}
+
+.header-right {
+  flex: 1 1 30%;
+  text-align: right;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #3730a3; /* indigo border accent */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .header-right {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .header h1 {
@@ -57,7 +94,6 @@ body {
   font-weight: 800;
   color: #111827;
 }
-
 .header p {
   font-size: 1.1rem;
   margin-top: 0.5rem;

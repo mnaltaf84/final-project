@@ -1,81 +1,75 @@
-
 import React from "react";
-import "./styles/portfolio.css";
+import "../styles/Portfolio.css";
 
 export default function Portfolio() {
-  const handleDownloadPDF = () => {
-    const input = document.getElementById("portfolio-section");
-    html2canvas(input, { scale: 2 }).then((canvas) => {
-      const imgData = canvas.toDataURL("image/png");
-      const pdf = new jsPDF("p", "mm", "a4");
-      const imgProps = pdf.getImageProperties(imgData);
-      const pdfWidth = pdf.internal.pageSize.getWidth();
-      const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
-      pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
-      pdf.save("Muhammad_Naveed_CV.pdf");
-    });
-  };
-
   const skills = [
     "Computer Hardware & Software",
     "Networking & Troubleshooting",
-    "Printer/Scanner Support",
+    "IP Cameras configurations and Troubleshooting",
+    "Routers configuration",
+    "Printer/Scanner Maintenance and Projects",
     "Windows & Software Installation",
-    "Web Development (HTML/CSS/JS/React)",
-    "Figma UI Design",
-    "MS Office",
+    "Web Development (HTML/CSS/JS/React JS/Figma)",
+    "MS Access Database Development",
+    "PDF Editing, Adobe Photoshop, Illustrator, Adobe Indesign",
     "Remote Customer Support",
   ];
 
   return (
     <div className="portfolio-container" id="portfolio-section">
       <header className="header">
-        <div>
+        <div className="header-left">
           <h1>Muhammad Naveed Altaf</h1>
           <p>Sr. Support Engineer — IT & Hardware Specialist</p>
           <p>Lahore, Pakistan — mnaltaf84@gmail.com — 0314-4994654</p>
+        </div>
+        <div className="header-right">
+          <img
+            src="portfolio-Image.png"
+            alt="Muhammad Naveed Altaf"
+            className="profile-pic"
+          />
         </div>
       </header>
 
       <section className="portfolio-section professional-summary">
         <h2>Professional Summary</h2>
         <p>
-          Customer Support & IT Hardware Engineer with 20+ years of experience
-          in printers, photocopiers, networks, and IT support. Skilled in client
-          service, onsite troubleshooting, documentation, and remote support.
-          Proven track record in managing technical teams, handling operations,
-          and delivering enterprise printing solutions.
+          Customer Support & IT Hardware Engineer with 18+ years of experience
+          in IT support, networks, Routers, printers, photocopiers. Skilled in
+          client service, onsite troubleshooting, documentation, and remote
+          support. Proven track record in managing technical teams, handling
+          operations, and delivering enterprise printing solutions through print
+          management softwares. Managed Bank's printing projects and delivered
+          on time.
         </p>
-      </section>
-
-      <section className="portfolio-section">
-        <h2>Personal Information</h2>
-        <ul>
-          <li>Address: House #30/1, Street #13, Quaid-e-Millat Colony, Lahore</li>
-          <li>CNIC: 35201-3690780-9</li>
-          <li>Domicile: Punjab, Pakistan</li>
-          <li>Nationality: Pakistani</li>
-          <li>Marital Status: Married</li>
-          <li>Religion: Islam</li>
-        </ul>
       </section>
 
       <section className="portfolio-section grid-2">
         <div>
           <h2>Education</h2>
           <ul>
-            <li>FA — AIOU (Continuing) 2024–Present</li>
-            <li>Diploma in R/TV Electronics — 2001</li>
-            <li>Computer Software Course — 1998</li>
-            <li>Matric with Science — 1998</li>
+            <li>FA — (Continuing 3rd Semester) from AIOU 2024 - Present</li>
+            <li>
+              Diploma in R/TV Electronics from Govt. Technical Institute — 2001
+            </li>
+            <li>
+              Computer Software Course from Minhaj Computer College — 1998
+            </li>
+            <li>Matric with Science from Lahore Board — 1998</li>
           </ul>
         </div>
 
         <div>
           <h2>Certifications</h2>
           <ul>
-            <li>SafeCom — Training & Badge</li>
-            <li>PaperCut — Training & Badge</li>
+            <li>SafeCom — Various Courses and Trainings & Badge</li>
+            <li>PaperCut — Various Courses and Trainings & Badge</li>
+            <li>Graphic Designing from Digiskills</li>
+            <li>Web Designing from Digiskills</li>
+            <li>Freelancing from Digiskills</li>
+            <li>Search Engine Optimization (SEO) from Digiskills</li>
+            <li>Digital Marketing from Digiskills</li>
           </ul>
         </div>
       </section>
@@ -83,9 +77,14 @@ export default function Portfolio() {
       <section className="portfolio-section">
         <h2>Work Experience</h2>
         <ul>
-          <li>Sr. Support Engineer — Mushko Printing Solutions (2022–Present)</li>
+          <li>
+            Sr. Support Engineer — Mushko Printing Solutions (2024-Present)
+          </li>
           <li>Installed & managed printers at client site</li>
           <li>Handled customer service tickets & on-site troubleshooting</li>
+          <li>
+            Additionally leading project team over all Pakistan customer offices
+          </li>
           <li>SLA follow-up with vendor</li>
         </ul>
       </section>
@@ -93,11 +92,14 @@ export default function Portfolio() {
       <section className="portfolio-section projects">
         <h2>Projects</h2>
         <ul>
-          <li>Calculator App (HTML/CSS/JS)</li>
+          <li>Calculator App using (HTML/CSS/JS)</li>
           <li>Weather App (API Integration)</li>
-          <li>Todo App (CRUD)</li>
-          <li>Digital Live Clock</li>
-          <li>MS Access Database Solutions</li>
+          <li>Todo App (HTML/CSS/React JS)</li>
+          <li>Digital Live Clock in React JS</li>
+          <li>
+            MS Access Database (Developed many databases for different
+            businesses)
+          </li>
         </ul>
       </section>
 
@@ -113,19 +115,29 @@ export default function Portfolio() {
       </section>
 
       <section className="portfolio-section">
+        <h2>Personal Information</h2>
+        <ul>
+          <li>
+            Address: House #30/1, Street #12, Quaid-e-Millat Colony, Lahore
+          </li>
+          <li>CNIC: 35201-3690780-9</li>
+          <li>Domicile: Punjab, Pakistan</li>
+          <li>Nationality: Pakistani</li>
+          <li>Marital Status: Married</li>
+          <li>Religion: Islam</li>
+        </ul>
+      </section>
+
+      <section className="portfolio-section">
         <h2>Languages</h2>
         <ul>
-          <li>Urdu — Native / Full Professional</li>
+          <li>Urdu / Full Professional</li>
+          <li>Punjabi / Full</li>
           <li>English — Intermediate</li>
         </ul>
       </section>
 
-      <div style={{ textAlign: "center" }}>
-        <button className="download-btn" onClick={handleDownloadPDF}>
-          Download PDF
-        </button>
-      </div>
-
+      <div style={{ textAlign: "center" }}></div>
       <footer>© {new Date().getFullYear()} Muhammad Naveed Altaf</footer>
     </div>
   );
