@@ -9,9 +9,9 @@
 }
 .skills-heading{
     text-align: center;
-    background-image: linear-gradient(90deg, #ffff3f, #80b918);
     border: solid black 2px;
     box-shadow: 15px 5px 5px 5px brown;
+    /* background-image: linear-gradient(90deg, #ffff3f, #80b918); */
     /* background-color: #ffff3f; */
 }
 .skills-image{

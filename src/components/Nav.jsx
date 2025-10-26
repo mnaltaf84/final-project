@@ -1,4 +1,5 @@
 import React from 'react'
+// import React, { useState } from 'react';
 import { Link } from 'react-router-dom'
 import { FaHome } from "react-icons/fa";
 import { BsPersonWorkspace } from "react-icons/bs";
@@ -10,10 +11,16 @@ import { FiMessageCircle } from "react-icons/fi";
 
 
 export default function Nav() {
+    // const [isOpen, setIsOpen] = useState(false);
+  
+    // const toggleMenu = () => {
+    //   setIsOpen(!isOpen);
+    // };
+  
   return (
     <div style={{display:"flex"}}>
-      <img src="logo.jpeg" alt="" style={{backgroundColor:"green", width:"80px", height:"80px" }}/>
-      <ul className='nav-ultag' style={{display:"flex", gap:"40px",height:"50px", paddingTop:"10px", listStyle:"none", justifyContent:"center", marginTop:"20px", fontSize:"20px"}}>
+      <img src="logo.jpeg" alt="logo" style={{width:"80px", height:"80px" }}/>
+      <ul className="nav-ultag" style={{display:"flex", gap:"40px",height:"50px", paddingTop:"10px", listStyle:"none", justifyContent:"center", marginTop:"20px", fontSize:"20px"}}>
         <li>
           <Link className='nav-bar' to="/"><FaHome /> home</Link>
         </li>
@@ -37,6 +44,12 @@ export default function Nav() {
         </li>
 
       </ul>
+      {/* <div className="hamburger" onClick={toggleMenu}>
+        <span className={`bar ${isOpen ? 'open' : ''}`}></span>
+        <span className={`bar ${isOpen ? 'open' : ''}`}></span>
+        <span className={`bar ${isOpen ? 'open' : ''}`}></span>
+      </div> */}
+
     </div>
   )
 }

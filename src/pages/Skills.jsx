@@ -3,7 +3,7 @@ import React from "react";
 export default function Skills() {
   return (
     <>
-        <h1 className="skills-heading">My Skills</h1>
+        <h1 className="skills-heading">Soft Skills</h1>
 
       <div className="skills-main-div">
 
@@ -36,7 +36,7 @@ export default function Skills() {
             <img className="skills-image" src="InventoryDatabase.jpg" alt="MS Access Development Image" />
           </div>
         </div>
-
+              <h1 style={{textAlign:"center", border:"solid black 2px", boxShadow:"15px 5px 5px 5px brown"}}>Technical Skills</h1>
         <div className="skills-div2">
 
           <div className="skills2-sub-div1">
@@ -91,7 +91,7 @@ export default function Skills() {
             />
           </div>
         </div>
-
+              <h1 style={{textAlign:"center", border:"solid black 2px", boxShadow:"15px 5px 5px 5px brown"}}>I.T Skills</h1>
         <div className="skills-div3">
 
           <div className="skills3-sub-div1">
