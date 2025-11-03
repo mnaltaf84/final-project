@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Nav from "./components/Nav"
-import Main from "./pages/Main"
+import Home from "./pages/Home"
 import Portfolio from "./pages/Portfolio"
 import Skills from "./pages/Skills"
 import Projects from "./pages/Projects"
@@ -19,7 +19,7 @@ export default function App() {
     <>
     <Nav />
     <Routes>
-      <Route path="/" element={<Main />} />
+      <Route path="/" element={<Home />} />
       <Route path="/portfolio" element={<Portfolio/>} />
       <Route path="/skills" element={<Skills/>} />
       <Route path="/projects" element={<Projects />} />
