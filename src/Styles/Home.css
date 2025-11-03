@@ -31,7 +31,7 @@ box-sizing: border-box;
 .image-div{
     display: block;
     padding-right: 50px;
-    height: 30%;
+    height: 10%;
     /* background-color: aliceblue; */
 }
 .image-div img{

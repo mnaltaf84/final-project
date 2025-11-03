@@ -11,7 +11,7 @@ import NotFound from "./pages/NotFound"
 import About from "./pages/About"
 import { Route, Routes } from "react-router-dom"
 import "./styles/Nav.css"
-import "./Styles/Main.css"
+import "./Styles/Home.css"
 import "./Styles/Skills.css"
 
 export default function App() {
