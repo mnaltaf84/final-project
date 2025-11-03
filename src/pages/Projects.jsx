@@ -13,8 +13,8 @@ export default function Projects() {
       <h3>Check out my projects below:</h3>
       <ul>
         <li><a href="https://naveedaltaf-todoapp.netlify.app/">Todo App</a></li>
-        <li><a href="https://naveedaltaf-weatherapp.netlify.app/">Weather App</a></li>
-        <li><a href="https://naveedaltaf-calculator.netlify.app/">Calculator</a></li>
+        <li><a href="https://naveedaltaf-weatherapp.netlify.app">Weather App</a></li>
+        <li><a href="https://naveedaltaf-calculatorapp.netlify.app//">Calculator</a></li>
       </ul>
       {/* <Todo /> */}
       <Weather />

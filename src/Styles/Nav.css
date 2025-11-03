@@ -6,7 +6,8 @@
 .navbar-main{
     background-color: black;
     width: 100%;
-    height: 100%;justify-content: space-between;
+    height: 100%;
+    justify-content: space-between;
 }
 .nav-ultag{
   list-style: none;
@@ -32,7 +33,7 @@ li{
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
-  background-color: black;
+  /* background-color: black; */
   color: #fff;
 }
 .logo img{
