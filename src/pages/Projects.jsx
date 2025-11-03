@@ -1,7 +1,4 @@
 import React from 'react'
-import Todo from "../components/Todo"
-import Weather from "../components/Weather"
-import Calculator from "../components/Calculator"
 
 
 
@@ -17,7 +14,7 @@ export default function Projects() {
         <li><a href="https://naveedaltaf-calculatorapp.netlify.app//">Calculator</a></li>
       </ul>
       {/* <Todo /> */}
-      <Weather />
+      {/* <Weather /> */}
       {/* <Calculator /> */}
     </div>
     </div>
