@@ -31,12 +31,12 @@ box-sizing: border-box;
 .image-div{
     display: block;
     padding-right: 50px;
-    height: 10%;
+    height: 20%;
     /* background-color: aliceblue; */
 }
 .image-div img{
     float: right;
-    height: 100%;
+    height: 80%;
     height: 100vh;
 }
 .intro-div{

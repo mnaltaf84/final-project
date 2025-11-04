@@ -19,7 +19,7 @@ export default function Home() {
         <h1>Web Developer</h1>
       </div>
       </div>
-
+      
       <div className='play-icon-div'>
       <img src="play-icon.png" alt="" />
       </div>
@@ -28,8 +28,6 @@ export default function Home() {
         <img src="Naveed-bg.png" alt="" />
       </div>
       </div>
-
-
     </>
   )
 }
