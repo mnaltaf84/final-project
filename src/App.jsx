@@ -13,6 +13,9 @@ import { Route, Routes } from "react-router-dom"
 import "./styles/Nav.css"
 import "./Styles/Home.css"
 import "./Styles/Skills.css"
+import "./Styles/Portfolio.css"
+import "./Styles/Project.css"
+import "./Styles/Services.css"
 
 export default function App() {
   return (
