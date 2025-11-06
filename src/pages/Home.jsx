@@ -21,7 +21,7 @@ export default function Home() {
       </div>
       
       <div className='play-icon-div'>
-      <img src="play-icon.png" alt="" />
+      {/* <img src="play-icon.png" alt="" /> */}
       </div>
 
       <div className='image-div'>

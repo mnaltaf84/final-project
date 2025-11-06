@@ -46,6 +46,9 @@
         font-weight: bold;
         width: 100%;
     }
+    .skills-content{
+    overflow: auto;
+}
 }
 .skills-heading{
     text-align: center;

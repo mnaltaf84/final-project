@@ -37,11 +37,10 @@ export default function Portfolio() {
         <p>
           Customer Support & IT Hardware Engineer with 18+ years of experience
           in IT support, networks, Routers, printers, photocopiers. Skilled in
-          client service, onsite troubleshooting, documentation, and remote
-          support. Proven track record in managing technical teams, handling
+          client service, onsite troubleshooting, documentation, and technical
+          support remotly. Proven track record in managing technical teams, handling
           operations, and delivering enterprise printing solutions through print
-          management softwares. Managed Bank's printing projects and delivered
-          on time.
+          management softwares. Managed Bank's printing projects with on time delivery.
         </p>
       </section>
 
@@ -80,7 +79,7 @@ export default function Portfolio() {
           <li>
             Sr. Support Engineer — Mushko Printing Solutions (2024-Present)
           </li>
-          <li>Installed & managed printers at client site</li>
+          <li>Install & manage printers at client site</li>
           <li>Handled customer service tickets & on-site troubleshooting</li>
           <li>
             Additionally leading project team over all Pakistan customer offices
@@ -100,6 +99,7 @@ export default function Portfolio() {
             MS Access Database (Developed many databases for different
             businesses)
           </li>
+          <li>Bank Projects for Customer's Thanks Letters</li>
         </ul>
       </section>
 

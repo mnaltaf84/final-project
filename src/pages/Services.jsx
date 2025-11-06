@@ -1,34 +1,46 @@
 import React from 'react'
-import '../styles/Skills.css'
+import '../Styles/Services.css'
 
 export default function Services() {
   return (
-    <div className='skills-maindiv'>
+    <div className='services-maindiv'>
       
-      <div className='skills-heading'>
+      <div className='services-heading'>
       <h1 className='heading-content1'>My</h1>
       <h1 className='heading-content2'>Services</h1>
       </div>
       <div>
-        <h2 className='skill'>Web Developement</h2>
+        <h2 className='services'>Web Development</h2>
       </div>
       <div>
-        <h2 className='skill'>HTML</h2>
+        <h2 className='services'>HTML</h2>
       </div>
       <div>
-        <h2 className='skill'>CSS</h2>
+        <h2 className='services'>CSS</h2>
       </div>
       <div>
-        <h2 className='skill'>JavaScript</h2>
+        <h2 className='services'>JavaScript</h2>
       </div>
       <div>
-        <h2 className='skill'>ReactJS</h2>
+        <h2 className='services'>ReactJS</h2>
       </div>
       <div>
-        <h2 className='skill'>NodeJS</h2>
+        <h2 className='services'>NodeJS</h2>
       </div>
       <div>
-        <h2 className='skill'>Database Management</h2>
+        <h2 className='services'>Database Management</h2>
+      </div>
+      <div>
+        <h2 className='services'>Laptop/Desktop Repairing</h2>
+      </div>
+      <div>
+        <h2 className='services'>Softwares, Windows Installation</h2>
+      </div>
+      <div>
+        <h2 className='services'>Printers and Photocopier Repairing</h2>
+      </div>
+      <div>
+        <h2 className='services'>PDF Editing</h2>
       </div>
     </div>
   )

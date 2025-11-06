@@ -1,68 +1,80 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.ul-div{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
-}
-.app-div{
-    margin: 10px;
-    padding: 10px;
-    border: 5px solid lightseagreen;
-    background-color: rgb(250, 183, 183);
-    width: 300px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 150px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-.app-div:hover{
-    background-color: rgb(245, 143, 143);
-}
-.app-div a{
-    font-size: x-large;
-    text-decoration: none;
-    color: blue;
-}
-.app-div li{
-    display: flex;
-    flex-direction: column;
+/* Professional and Responsive CSS for Projects Section */
+
+.ul-div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2rem;
+	list-style: none;
+	padding: 0;
+	margin: 2rem 0 0 0;
 }
 
-@media (max-width:"768px") {
-.ul-div{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
+.app-div {
+	background: linear-gradient(135deg, #f8fafc 60%, #e0e7ef 100%);
+	border-radius: 1.2rem;
+	box-shadow: 0 4px 24px rgba(0,0,0,0.08), 0 1.5px 6px rgba(0,0,0,0.04);
+	padding: 2rem 1.5rem 1.5rem 1.5rem;
+	min-width: 220px;
+	max-width: 300px;
+	transition: transform 0.2s, box-shadow 0.2s;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
-.app-div{
-    margin: 10px;
-    padding: 10px;
-    border: 5px solid lightseagreen;
-    background-color: rgb(250, 183, 183);
-    width: 100px;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    border-radius: 100px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+
+.app-div:hover {
+	transform: translateY(-8px) scale(1.03);
+	box-shadow: 0 8px 32px rgba(0,0,0,0.12), 0 2px 8px rgba(0,0,0,0.08);
 }
+
+.app-div li {
+	list-style: none;
+	text-align: center;
+}
+
+.app-div h1 {
+	font-size: 2.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.app-div a {
+	display: inline-block;
+	margin-top: 0.5rem;
+	font-size: 1.1rem;
+	color: #1a237e;
+	text-decoration: none;
+	font-weight: 600;
+	border-bottom: 2px solid transparent;
+	transition: color 0.2s, border-bottom 0.2s;
+}
+
+.app-div a:hover {
+	color: #f59e42;
+	border-bottom: 2px solid #f59e42;
+}
+
+@media (max-width: 900px) {
+	.ul-div {
+		gap: 1rem;
+	}
+	.app-div {
+		min-width: 180px;
+		max-width: 240px;
+		padding: 1.2rem 1rem 1rem 1rem;
+	}
+}
+
+@media (max-width: 600px) {
+	.ul-div {
+		flex-direction: column;
+		align-items: center;
+		gap: 1.2rem;
+	}
+	.app-div {
+		width: 90vw;
+		min-width: unset;
+		max-width: unset;
+		padding: 1rem;
+	}
 }
