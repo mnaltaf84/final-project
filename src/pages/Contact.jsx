@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import  "../Styles/contact.css"
 
 export default function Contact() {
   const [formData, setFormData]= useState({
@@ -41,9 +42,9 @@ export default function Contact() {
   };
 
   return (
-    <div className="m-auto w-2xs">
+    <div className="contact-main-div">
       <h1>Contact Form</h1>
-      <form onSubmit={handleFormSubmission} className="flex flex-col gap-3">
+      <form className="form" onSubmit={handleFormSubmission}>
         <input className="rounded-sm bg-grey-300" type="text" name="username" placeholder='Enter your name' required value={formData.username} onChange={handleInputChange}/><br />
         <input className="rounded-sm bg-grey-300" type="email" name='email' placeholder='Enter your email' required value={formData.email} onChange={handleInputChange}/><br /><br />
         <textarea className="rounded-5m bg-grey-300" name="message" placeholder='Enter your message here...' rows={5} required value={formData.message} onChange={handleInputChange}></textarea><br />
