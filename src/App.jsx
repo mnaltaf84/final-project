@@ -7,7 +7,7 @@ import Skills from "./pages/Skills"
 import Projects from "./pages/Projects"
 import Services from "./pages/Services"
 import Contact from "./pages/Contact"
-import NotFound from "./pages/NotFound"
+import Notfound from "./pages/Notfound"
 import About from "./pages/About"
 import { Route, Routes } from "react-router-dom"
 import "./styles/Nav.css"
@@ -29,7 +29,7 @@ export default function App() {
       <Route path="/services" element={<Services/>} />
       <Route path="/contact" element={<Contact/>} />
       <Route path="/about" element={<About/>} />
-      <Route path="/*" element={<NotFound/>} />
+      <Route path="/*" element={<Notfound/>} />
     </Routes>
     </>
   )
