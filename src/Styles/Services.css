@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 .services-maindiv {
     min-height: 100vh;
     padding: 4rem 2rem;
@@ -13,7 +12,6 @@
     gap: 1.5rem;
     place-items: center;
 }
-
 .services-heading {
     grid-column: 1 / -1;
     display: flex;
@@ -22,7 +20,6 @@
     align-items: center;
     margin-bottom: 2rem;
 }
-
 .heading-content1,
 .heading-content2 {
     font-size: 2.5rem;
@@ -30,16 +27,13 @@
     letter-spacing: 1px;
     text-transform: uppercase;
 }
-
 .heading-content1 {
     color: #2d3748;
 }
-
 .heading-content2 {
     color: #3b82f6;
     position: relative;
 }
-
 .heading-content2::after {
     content: '';
     position: absolute;
@@ -50,7 +44,6 @@
     background: #3b82f6;
     border-radius: 2px;
 }
-
 .services {
     width: 100%;
     max-width: 350px;
@@ -70,7 +63,6 @@
     justify-content: center;
     min-height: 100px;
 }
-
 .services::before {
     content: '';
     position: absolute;
@@ -81,18 +73,14 @@
     background: #3b82f6;
     transition: all 0.3s ease;
 }
-
 .services:hover {
     transform: translateY(-5px) scale(1.02);
     box-shadow: 0 8px 20px rgba(59, 130, 246, 0.2);
 }
-
 .services:hover::before {
     width: 100%;
     opacity: 0.1;
 }
-
-/* Animation keyframes */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -103,13 +91,10 @@
         transform: translateY(0);
     }
 }
-
-/* Apply animations */
 .services-maindiv > div:not(.services-heading) {
     opacity: 0;
     animation: fadeInUp 0.5s ease-out forwards;
 }
-
 .services-maindiv > div:nth-child(2) { animation-delay: 0.1s; }
 .services-maindiv > div:nth-child(3) { animation-delay: 0.2s; }
 .services-maindiv > div:nth-child(4) { animation-delay: 0.3s; }
@@ -117,38 +102,31 @@
 .services-maindiv > div:nth-child(6) { animation-delay: 0.5s; }
 .services-maindiv > div:nth-child(7) { animation-delay: 0.6s; }
 .services-maindiv > div:nth-child(8) { animation-delay: 0.7s; }
-
-/* Responsive Design */
 @media (min-width: 640px) {
     .services-maindiv {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
-
     .heading-content1,
     .heading-content2 {
         font-size: 3rem;
     }
 }
-
 @media (min-width: 1024px) {
     .services-maindiv {
         grid-template-columns: repeat(3, 1fr);
         padding: 5rem;
         gap: 2.5rem;
     }
-
     .heading-content1,
     .heading-content2 {
         font-size: 3.5rem;
     }
-
     .services {
         max-width: 400px;
         padding: 2rem;
     }
 }
-
 @media (min-width: 1280px) {
     .services-maindiv {
         padding: 6rem;

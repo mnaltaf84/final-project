@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 .contact-main-div {
     width: 100%;
     min-height: 100vh;
@@ -14,7 +13,6 @@
     padding: 2rem;
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
-
 .contact-main-div h1 {
     color: #2d3748;
     margin-bottom: 2rem;
@@ -22,7 +20,6 @@
     text-align: center;
     font-weight: 600;
 }
-
 .form {
     width: 90%;
     max-width: 500px;
@@ -31,7 +28,6 @@
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
-
 .form input,
 .form textarea {
     width: 100%;
@@ -43,7 +39,6 @@
     transition: all 0.3s ease;
     background-color: #f8fafc;
 }
-
 .form input:focus,
 .form textarea:focus {
     outline: none;
@@ -51,7 +46,6 @@
     box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
     background-color: white;
 }
-
 .form button {
     width: 100%;
     padding: 1rem;
@@ -66,22 +60,18 @@
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
-
 .form button:hover {
     background-color: #2563eb;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(59, 130, 246, 0.3);
 }
-
 .form button:active {
     transform: translateY(0);
 }
-
 .form p {
     margin-top: 1rem;
     text-align: center;
 }
-
 .form p span {
     display: inline-block;
     padding: 0.75rem 1.5rem;
@@ -89,20 +79,14 @@
     font-weight: 500;
     animation: fadeIn 0.3s ease-in-out;
 }
-
-/* Success message styling */
 .form p span:first-of-type {
     color: #059669;
     background-color: #ecfdf5;
 }
-
-/* Error message styling */
 .form p span:last-of-type {
     color: #dc2626;
     background-color: #fef2f2;
 }
-
-/* Animation for messages */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -113,18 +97,14 @@
         transform: translateY(0);
     }
 }
-
-/* Responsive Design */
 @media (max-width: 768px) {
     .contact-main-div {
         padding: 1rem;
     }
-
     .contact-main-div h1 {
         font-size: 2rem;
         margin-bottom: 1.5rem;
     }
-
     .form {
         width: 95%;
         padding: 1.5rem;

@@ -166,7 +166,6 @@ body {
   transition: var(--transition);
   animation: pulse 2s infinite;
 }
-/* Animations */
 @keyframes fadeInDown {
   from {
     opacity: 0;
@@ -177,7 +176,6 @@ body {
     transform: translateY(0);
   }
 }
-
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -188,7 +186,6 @@ body {
     transform: translateY(0);
   }
 }
-
 @keyframes float {
   0%, 100% {
     transform: translateY(0);
@@ -208,7 +205,6 @@ body {
     box-shadow: 0 0 0 0 rgba(0, 255, 136, 0);
   }
 }
-/* Media Queries */
 @media screen and (max-width: 1200px) {
   .name h1 {
     font-size: 3rem;
@@ -237,7 +233,6 @@ body {
     width: 45%;
   }
 }
-
 @media screen and (max-width: 768px) {
   .name h1 {
     font-size: 2rem;
@@ -259,7 +254,6 @@ body {
     height: 60px;
   }
 }
-
 @media screen and (max-width: 480px) {
   .name h1 {
     font-size: 1.8rem;
