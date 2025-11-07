@@ -10,12 +10,14 @@ import Contact from "./pages/Contact"
 import Notfound from "./pages/Notfound"
 import About from "./pages/About"
 import { Route, Routes } from "react-router-dom"
-import "./styles/Nav.css"
+import "./Styles/About.css"
+import "./styles/Contact.css"
 import "./Styles/Home.css"
-import "./Styles/Skills.css"
+import "./styles/Nav.css"
 import "./Styles/Portfolio.css"
 import "./Styles/Project.css"
 import "./Styles/Services.css"
+import "./Styles/Skills.css"
 
 export default function App() {
   return (
