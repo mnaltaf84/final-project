@@ -19,7 +19,7 @@ export default function About() {
             </div>
 
             <h1 id="about-heading" className="hero-head">About Me</h1>
-            <p className="hero-sub">Hi, I'm <strong>Naveed Altaf</strong>. I work at the intersection of electronics and software — from repairing printers and laptops to building practical web applications and internal tools. I focus on reliability, clear communication and pragmatic solutions.</p>
+            <p className="hero-sub">Hi, I'm <strong>Naveed Altaf</strong>. I work at the intersection of electronics and software, from repairing printers and laptops to building practical web applications and internal tools. I focus on reliability, clear communication and reasonable solutions.</p>
 
             <div className="about-content">
               <p>
