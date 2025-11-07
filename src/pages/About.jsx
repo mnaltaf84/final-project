@@ -33,7 +33,7 @@ export default function About() {
 
             <div className="cta-row">
               <button className="btn-primary" onClick={() => window.location = '/contact'}>Get in touch</button>
-              <button className="btn-outline" onClick={() => window.scrollTo({top: document.body.scrollHeight, behavior:'smooth'})}>See Projects</button>
+              {/* <button className="btn-outline" onClick={() => window.scrollTo({top: document.body.scrollHeight, behavior:'smooth'})}>See Projects</button> */}
             </div>
           </div>
 

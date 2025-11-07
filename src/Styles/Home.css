@@ -6,26 +6,22 @@
   --text-dark: #333333;
   --transition: all 0.3s ease-in-out;
 }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--primary-color);
   color: var(--text-light);
 }
-
 .main-header {
   min-height: 100vh;
   background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
   position: relative;
   overflow: hidden;
 }
-
 .sub-header {
   max-width: 1400px;
   margin: 0 auto;
@@ -35,13 +31,64 @@ body {
   position: relative;
   z-index: 1;
 }
-
+.social-bar{
+  padding: 5px 0px 0px 10px;
+  width: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  background-color: lavender;
+  gap: 12px;
+}
+.social-bar li{
+  font-size: x-large;
+  float: right;
+}
+.youtube-icon a{
+  color: #FF0000;
+}
+.youtube-icon a:hover{
+  color: #cc0000;
+}
+.linkedin-icon a{
+  color: #0A66C2;
+}
+.linkedin-icon a:hover{
+  color: #084482;
+}
+.whatsapp-icon a{
+  color: #25D366;
+}
+.whatsapp-icon a:hover{
+  color: #1da851;
+}
+.facebook-icon a{
+  color: #1877F2;
+}
+.facebook-icon a:hover{
+  color: #145db2;
+}
+.instagram-icon{
+  background-image: linear-gradient(45deg, #405DE6, #5851DB,red, #833AB4, #C13584, #E1306C, #FD1D1D);
+  background-clip: text;
+  color: transparent;
+  transition: opacity 0.15s ease;
+}
+.instagram-icon a:hover{
+  opacity: 0.8;
+}
+.github-icon a{
+  color: #171515;
+  transition: color 0.15s ease;
+}
+.github-icon a:hover{
+  color: #4078c0;
+}
 .name {
   text-align: center;
   margin-bottom: 2rem;
   animation: fadeInDown 1s ease-out;
 }
-
 .name h1 {
   font-size: 3.5rem;
   font-weight: 700;
@@ -53,19 +100,16 @@ body {
   margin: 0.5rem;
   letter-spacing: 2px;
 }
-
 .intro-div {
   text-align: center;
   margin: 3rem 0;
   animation: fadeInUp 1s ease-out 0.5s both;
 }
-
 .intro-div h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
   color: var(--text-light);
 }
-
 .intro-div h1 {
   font-size: 3rem;
   color: var(--accent-color);
@@ -73,7 +117,6 @@ body {
   position: relative;
   display: inline-block;
 }
-
 .intro-div h1::after {
   content: '';
   position: absolute;
@@ -86,30 +129,28 @@ body {
   transform-origin: right;
   transition: var(--transition);
 }
-
 .intro-div h1:hover::after {
   transform: scaleX(1);
   transform-origin: left;
 }
-
 .image-div {
   position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 40%;
-  height: 90vh;
+  top: 10px;
+  right: 10px;
+  width: 15vw;
+  height: 40vh;
+  border-radius: 200px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
-
 .image-div img {
   max-height: 90%;
+  border-radius: 100px;
   object-fit: contain;
   filter: drop-shadow(0 0 20px rgba(0, 255, 136, 0.3));
   animation: float 6s ease-in-out infinite;
 }
-
 .play-icon-div {
   position: absolute;
   left: 50%;
@@ -117,7 +158,6 @@ body {
   transform: translateX(-50%);
   z-index: 2;
 }
-
 .play-icon-div img {
   width: 80px;
   height: 80px;
@@ -126,7 +166,6 @@ body {
   transition: var(--transition);
   animation: pulse 2s infinite;
 }
-
 /* Animations */
 @keyframes fadeInDown {
   from {
@@ -158,7 +197,6 @@ body {
     transform: translateY(-20px);
   }
 }
-
 @keyframes pulse {
   0% {
     box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.6);
@@ -170,39 +208,31 @@ body {
     box-shadow: 0 0 0 0 rgba(0, 255, 136, 0);
   }
 }
-
 /* Media Queries */
 @media screen and (max-width: 1200px) {
   .name h1 {
     font-size: 3rem;
-  }
-  
+  }  
   .intro-div h1 {
     font-size: 2.5rem;
-  }
-  
+  }  
   .image-div {
     width: 35%;
   }
 }
-
 @media screen and (max-width: 992px) {
   .sub-header {
     padding: 1.5rem;
-  }
-  
+  }  
   .name h1 {
     font-size: 2.5rem;
-  }
-  
+  }  
   .intro-div {
     margin: 2rem 0;
-  }
-  
+  }  
   .intro-div h2 {
     font-size: 1.8rem;
-  }
-  
+  }  
   .image-div {
     width: 45%;
   }
@@ -211,23 +241,19 @@ body {
 @media screen and (max-width: 768px) {
   .name h1 {
     font-size: 2rem;
-  }
-  
+  }  
   .intro-div h1 {
     font-size: 2rem;
-  }
-  
+  }  
   .intro-div h2 {
     font-size: 1.5rem;
-  }
-  
+  }  
   .image-div {
     position: relative;
     width: 100%;
     height: 50vh;
     margin-top: 2rem;
-  }
-  
+  }  
   .play-icon-div img {
     width: 60px;
     height: 60px;
@@ -237,20 +263,16 @@ body {
 @media screen and (max-width: 480px) {
   .name h1 {
     font-size: 1.8rem;
-  }
-  
+  }  
   .intro-div h1 {
     font-size: 1.6rem;
-  }
-  
+  }  
   .intro-div h2 {
     font-size: 1.3rem;
-  }
-  
+  }  
   .image-div {
     height: 40vh;
-  }
-  
+  }  
   .play-icon-div img {
     width: 50px;
     height: 50px;

@@ -18,7 +18,7 @@ export default function Projects() {
           marginTop: "0%",
         }}
       >
-        <h3>Check out my projects below:</h3><br />
+        <br />
         <ul className="ul-div">
           <div className="app-div">
             <li>
