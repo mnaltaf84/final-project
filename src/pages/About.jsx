@@ -10,7 +10,7 @@ export default function About() {
             <div className="profile-card" role="region" aria-label="profile">
               <div className="avatar" aria-hidden>
                 {/* use a decorative image from public folder or placeholder */}
-                <img src="/PrinterRepair.avif" alt="profile" />
+                <img src="/about-image.jpg" alt="profile" />
               </div>
               <div className="profile-info">
                 <h3>Naveed Altaf</h3>
