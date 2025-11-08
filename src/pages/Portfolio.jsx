@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Portfolio.css";
+import "../Styles/Portfolio.css";
 
 export default function Portfolio() {
   const skills = [
