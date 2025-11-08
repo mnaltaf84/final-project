@@ -1,4 +1,7 @@
 // import React from 'react'
+import '../Styles/Nav.css'
+
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'
 import { FaHome } from "react-icons/fa";

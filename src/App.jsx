@@ -12,7 +12,7 @@ import About from "./pages/About"
 import { Route, Routes } from "react-router-dom"
 import "./Styles/About.css"
 import "./styles/Contact.css"
-import './Styles/Nav.css'
+
 import "./Styles/Home.css"
 import "./Styles/Portfolio.css"
 import "./Styles/Project.css"
