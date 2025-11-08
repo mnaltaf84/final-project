@@ -25,7 +25,7 @@ export default function Portfolio() {
         </div>
         <div className="header-right">
           <img
-            src="portfolio-Image.png"
+            src="portfolio-Image.jpg"
             alt="Muhammad Naveed Altaf"
             className="profile-pic"
           />
