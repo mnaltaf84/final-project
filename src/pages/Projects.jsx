@@ -1,5 +1,4 @@
-import { Import } from "lucide-react";
-import React from "react";
+import "../Styles/Project.css"
 import { FcCalculator } from "react-icons/fc";
 import { FaCloudMoonRain } from "react-icons/fa";
 import { FcTodoList } from "react-icons/fc";
