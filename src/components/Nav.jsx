@@ -22,12 +22,12 @@ export default function Nav() {
   
   return (
     <div className="navbar-main" style={{display:"flex"}}>
-      <img className="logo" src="LogoBlack.png" alt="logo" style={{width:"80px", height:"80px" }}/>
+      <img className="logo" src="LogoBlack.png" alt="logo" style={{gap:"2px", width:"80px", height:"80px" }}/>
       <div className='name-title'>
       <h2 className='name-one'>Naveed </h2> &nbsp; &nbsp;
       <h2 className='name-two'> Altaf</h2>
       </div>
-      <ul className={`nav-ultag ${isOpen ? 'open' : ''}`} style={{display:"flex", gap:"2px",height:"80px", paddingTop:"10px", listStyle:"none", justifyContent:"center", marginTop:"20px", fontSize:"20px"}}>
+      <ul className={`nav-ultag ${isOpen ? 'open' : ''}`} style={{gap:"2px",height:"100px", paddingTop:"10px", listStyle:"none", justifyContent:"center", marginTop:"20px", fontSize:"20px"}}>
         <li>
           <Link className='navbar-link' to="/" style={{gap:"5px"}}><FaHome />home</Link>
         </li>
