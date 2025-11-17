@@ -27,7 +27,7 @@ export default function Nav() {
       <h2 className='name-one'>Naveed </h2> &nbsp; &nbsp;
       <h2 className='name-two'> Altaf</h2>
       </div>
-      <ul className={`nav-ultag ${isOpen ? 'open' : ''}`} style={{display:"flex", gap:"40px",height:"50px", paddingTop:"10px", listStyle:"none", justifyContent:"center", marginTop:"20px", fontSize:"20px"}}>
+      <ul className={`nav-ultag ${isOpen ? 'open' : ''}`} style={{display:"flex", gap:"2px",height:"80px", paddingTop:"10px", listStyle:"none", justifyContent:"center", marginTop:"20px", fontSize:"20px"}}>
         <li>
           <Link className='navbar-link' to="/" style={{gap:"5px"}}><FaHome />home</Link>
         </li>
